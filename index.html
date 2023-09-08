@@ -21,7 +21,7 @@
             window.location = "cscrsv://";
 			// const now = new Date().valueOf();
 		 	setTimeout(function() {
-                if (appOpened) {
+                if (!appOpened) {
                     console.log("リダイレクト")
                     // if (new Date().valueOf() - now > 200) return;
                     if (isIOS) {
