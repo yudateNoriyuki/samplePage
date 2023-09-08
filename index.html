@@ -18,7 +18,11 @@
 		if (!isMobile) {
             // test
 		} else {
-            window.location = "cscrsv://";
+            const iframe = document.createElement('iframe');
+            iframe.style.display = 'none';
+            iframe.src = "cscrsv://";
+            document.body.appendChild(iframe);
+            // window.location = "cscrsv://";
 			// const now = new Date().valueOf();
 		 	setTimeout(function() {
                 if (!appOpened) {
@@ -29,7 +33,7 @@
                     } else if (isAndroid) {
                         window.location = "https://play.google.com/store/apps/details?id=jp.co.sosjapan.comingsoon.csc.reservationApp";
                     }
-            }}, 3000);
+            }}, 5000);
 		}
 	}
 
