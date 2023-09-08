@@ -11,6 +11,7 @@
 		if (!isMobile) {
             // test
 		} else {
+            window.location = "cscrsv://";
 			const now = new Date().valueOf();
 		 	setTimeout(function() {
 				if (new Date().valueOf() - now > 100) return;
@@ -19,7 +20,7 @@
 				} else if (isAndroid) {
 					window.location = "https://play.google.com/store/apps/details?id=jp.co.sosjapan.comingsoon.csc.reservationApp";
 			}}, 50);
-			window.location = "cscrsv://";
+
 		}
 	}
 
